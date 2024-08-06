@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &573376891774064300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4724315836643166401}
+  - component: {fileID: 4529808959188637054}
+  - component: {fileID: 6387049515460364324}
+  m_Layer: 0
+  m_Name: FurnitureSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4724315836643166401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573376891774064300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 719.2021, y: 288.61978, z: -103.16223}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4529808959188637054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573376891774064300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c480dff826c8804d9ea9452bbfe6755, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraToFace: {fileID: 0}
+  furniturePrefabs:
+  - {fileID: 4583827871048721196, guid: 6fd654476cf89dd498d6a9ff1f3043e4, type: 3}
+  - {fileID: 2583188500007456511, guid: aa2e21193b85a8b439edc32c22aa99ae, type: 3}
+  - {fileID: 2697852193593402869, guid: 26745227334f8d143b9e9cae646b6f8d, type: 3}
+  - {fileID: 4837023086537270361, guid: 8139d7366347f6d4d9fca85865281b35, type: 3}
+  - {fileID: 225650765288867116, guid: 7282ca9619fb7364f8dba4ee53139367, type: 3}
+  - {fileID: 2962239900052342126, guid: 0acd77d46349cef46ab76f732461bcfd, type: 3}
+  spawnVisualizationPrefab: {fileID: 0}
+  spawnOptionIndex: 0
+  onlySpawnInView: 1
+  viewportPeriphery: 0
+  applyRandomAngleAtSpawn: 1
+  spawnAngleRange: 45
+  spawnAsChildren: 0
+--- !u!114 &6387049515460364324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573376891774064300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e28f093305f21a43b159363fd5c021f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arInteractor: {fileID: 0}
+  furnitureSpawner: {fileID: 4529808959188637054}
+  requireHorizontalUpSurface: 0
+  spawnTriggerType: 0
+  spawnFurnitureInput:
+    m_InputSourceMode: 2
+    m_InputActionPerformed:
+      m_Name: Spawn Furniture
+      m_Type: 1
+      m_ExpectedControlType: 
+      m_Id: 69497c51-313b-49ed-b1f8-2696f4dcfe22
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionValue:
+      m_Name: Spawn Furniture Value
+      m_Type: 0
+      m_ExpectedControlType: Axis
+      m_Id: fd50f746-1a2d-45d9-8c57-465eb54998f4
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_InputActionReferencePerformed: {fileID: -4583591036684423646, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+    m_InputActionReferenceValue: {fileID: -4583591036684423646, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+    m_ObjectReferenceObject: {fileID: 0}
+    m_ManualPerformed: 0
+    m_ManualValue: 0
+    m_ManualQueuePerformed: 0
+    m_ManualQueueWasPerformedThisFrame: 0
+    m_ManualQueueWasCompletedThisFrame: 0
+    m_ManualQueueValue: 0
+    m_ManualQueueTargetFrame: 0
+  blockSpawnWhenInteractorHasSelection: 1
